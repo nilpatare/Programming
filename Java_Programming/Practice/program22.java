@@ -6,7 +6,7 @@ class NumberX
    {
         int iCnt = 0;
         
-        for(iCnt = 1; iCnt < iNo; iCnt++)
+        for(iCnt = 1; iCnt <= (iNo / 2); iCnt++)
         {
             if((iNo % iCnt) == 0)
             {
@@ -16,7 +16,7 @@ class NumberX
    }
 }
 
-class program21
+class program22
 {
     public static void main(String A[]) 
     {
@@ -33,6 +33,5 @@ class program21
        
     }
 }
-
-// Time Complexity : O(N)
+// Time Complexity : O(N/2)
 // Where N >= 0
