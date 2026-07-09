@@ -1,0 +1,24 @@
+// Type 1 
+import java.util.Scanner;
+
+class program14
+{
+    public static void main(String A[]) 
+    {
+        int iValue = 0;
+        
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter Number : ");
+        iValue = sobj.nextInt();
+
+        if((iValue % 3 == 0) && (iValue % 4 == 0))
+        {
+            System.out.println("Number is divisble by 3 & 5");
+        }
+        else
+        {
+            System.out.println("Number is not divisible by 3 & 5");
+        }
+    }
+}
