@@ -10,7 +10,7 @@ class NumberX
         {
             if((iNo % iCnt) == 0)
             {
-                break;
+                return false;               // Bad Programming practice in the code 
             }
         }
         if(iCnt < iNo/2)
@@ -24,7 +24,7 @@ class NumberX
     }
 }
 
-class program28
+class program29
 {
     public static void main(String A[]) 
     {
