@@ -1,9 +1,9 @@
 //Input : 5
-//Output : * # * # * # * # * #  
+//Output : *1* *2* *3* *4* *5* 
 
 import java.util.Scanner;
 
-class program61
+class program175
 {
     public static void Display(int iNo)
     {
@@ -11,7 +11,7 @@ class program61
 
         for(iCnt = 1; iCnt <= iNo; iCnt++)
         {
-            System.out.print("* \t # \t" );
+            System.out.print("*"+iCnt+"*\t" );
         }
         System.out.println();
     }
