@@ -1,9 +1,9 @@
-//Input : 5
-//Output : *1* *2* *3* *4* *5* 
+//Input : 7
+//Output : 1 * 3 * 5 * 7 * 
 
 import java.util.Scanner;
 
-class program62
+class program63
 {
     public static void Display(int iNo)
     {
@@ -11,7 +11,14 @@ class program62
 
         for(iCnt = 1; iCnt <= iNo; iCnt++)
         {
-            System.out.print("*"+iCnt+"*\t" );
+            if(iCnt % 2 == 0)
+            {
+            System.out.print("* \t");
+            }
+            else
+            {
+                System.out.print(iCnt+"\t");
+            }
         }
         System.out.println();
     }
