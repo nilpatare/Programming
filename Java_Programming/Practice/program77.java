@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-class program76
+class program77
 {
     public static void Display()
     {
@@ -17,6 +17,11 @@ class program76
        System.out.println("");
 
        for(iCnt = 1; iCnt <= 4; iCnt++)
+       {
+        System.out.print("*\t");
+       }
+
+    for(iCnt = 1; iCnt <= 4; iCnt++)
        {
         System.out.print("*\t");
        }
