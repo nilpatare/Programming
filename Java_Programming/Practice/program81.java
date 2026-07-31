@@ -11,7 +11,7 @@
 
 import java.util.Scanner;
 
-class program194
+class program81
 {
     public static void Display(int iRow, int iCol)
     {
