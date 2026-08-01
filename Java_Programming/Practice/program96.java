@@ -2,10 +2,10 @@
         iRow = 4
         iCOl = 4
 
-       4    4   4   4
-       3    3   3   3
-       2    2   2   2
-       1    1   1   1
+       @    @   @   $
+       @    @   $   @
+       @    $   @   @
+       $    @   @   @
 */
 
 
@@ -21,14 +21,21 @@ class Pattern
         {
             for(j = 1; j <= iCol ; j++)
             {
-              System.out.print(i + "\t");
+                if(i == j)
+                {
+                    System.out.print("$\t");
+                }
+                else
+                {
+                    System.out.print("@\t");
+                }
             }
             System.out.println("");
         }
     }
 }
 
-class program95
+class program96
 {
     public static void main(String A[])
     {
