@@ -3,9 +3,9 @@
         iCOl = 6
 
         a
-        b   b
-        c   c   c
-        d   d   d   d   
+        b   c
+        d   e   f
+        g   h   i   j  
 
 */
 
@@ -27,9 +27,9 @@ class Pattern
                 return ;
             }
 
-        for(i = 1 ,ch = 'a'; i <= iRow; i++, ch++)
+        for(i = 1 ,ch = 'a'; i <= iRow; i++)
         {
-            for(j = 1; j <= i; j++)
+            for(j = 1; j <= i; j++, ch++)
             { 
                 System.out.print(ch +"\t");
             }
@@ -41,7 +41,7 @@ class Pattern
     }
 }
 
-class program113
+class program114
 {
     public static void main(String A[])
     {
