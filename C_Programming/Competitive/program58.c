@@ -1,11 +1,8 @@
 #include<stdio.h>
-# define TRUE 1
-# define FALSE 0
 
-typedef int BOOL;
-
-BOOL CheckZero(int iNo)
+int CheckZero(int iNo)
 {
+    int iCnt = 0;
     int iDigit = 0;
 
     if(iNo < 0)
@@ -13,41 +10,30 @@ BOOL CheckZero(int iNo)
         iNo = -iNo;
     }
 
-    if(iNo == 0)
-    {
-        return TRUE;
-    }
     while(iNo != 0)
     {
         iDigit = iNo % 10;
-
-        if(iDigit == 0)
+        
+        if(iDigit == 2)
         {
-            return TRUE;
+            iCnt++;
         }
         iNo = iNo / 10;
     }
-    return FALSE;
+    return iCnt;
 }
 
 int main()
 {
     int iValue = 0;
-    BOOL bRet = FALSE;
+    int iRet = 0;
 
     printf("Enter Number : ");
     scanf("%d",&iValue);
 
-    bRet = CheckZero(iValue);
+    iRet = CheckZero(iValue);
 
-    if(bRet == TRUE)
-    {
-        printf("It Contains Zero");
-    }
-    else
-    {
-        printf("It Not Contains Zero");
-    }
+    printf("%d",iRet);
 
     return 0;
 }
